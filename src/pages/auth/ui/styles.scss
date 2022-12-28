@@ -1,0 +1,11 @@
+.auth-page {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  @media screen and (min-width: 30em) {
+    &__form {
+      width: clamp(15rem, 15rem + 30vw, 30rem);
+    }
+  }
+}

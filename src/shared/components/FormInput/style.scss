@@ -1,0 +1,31 @@
+@import 'src/app/styles/vars.scss';
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .5rem;
+  
+  &__label {
+    text-transform: capitalize;
+    font-size: $fs-400;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: $fs-400;
+    line-height: 1;
+
+    padding: .6rem .5rem;
+    border-radius: .4rem;
+    border: $disabled solid 1px;
+  }
+
+
+  &[data-has-error="true"] > &__input, 
+  &__input:invalid {
+    border: $error solid 2px;
+  }
+}
