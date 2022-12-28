@@ -1,0 +1,13 @@
+@import 'src/app/styles/vars.scss';
+
+.submit-btn {
+  min-height: 2.5rem;
+
+  border-radius: 0.4rem;
+
+  font-size: $fs-500;
+  font-weight: 700;
+  color: white;
+
+  background-color: $color-primary;
+}

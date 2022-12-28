@@ -1,0 +1,49 @@
+@import 'src/app/styles/vars.scss';
+
+.register-form {
+  display: grid;
+  gap: .7rem;
+
+  &__title {
+    font-family: inherit;
+    font-size: $fs-800;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 1rem
+  }
+
+  &__redirect-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: $fs-400;
+  }
+
+  &__redirect-text {
+    color: $disabled;
+  }
+
+  &__redirect-link{
+    color: $color-primary;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    cursor: pointer;
+  }
+
+  &__pair-field-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+  }
+
+  &__pair-field-container > * {
+    flex: 1
+  }
+}

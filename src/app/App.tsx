@@ -1,10 +1,12 @@
-import { Auth } from 'pages/auth'
+import { RouterProvider } from 'react-router-dom'
+
+import { router } from './routes'
 import './styles/index.scss'
 
 export function App() {
   return (
     <>
-      <Auth />
+      <RouterProvider router={router} />
     </>
   )
 }
