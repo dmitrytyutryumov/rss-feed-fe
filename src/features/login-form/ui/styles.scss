@@ -2,6 +2,7 @@
 
 .login-form {
   display: grid;
+  gap: 1rem;
 
   &__title {
     font-family: inherit;
@@ -22,18 +23,6 @@
     cursor: pointer;
   }
 
-  &__btn {
-    min-height: 2.5rem;
-
-    border-radius: 0.4rem;
-    
-    font-size: $fs-500;
-    font-weight: 700;
-    color: white;
-    
-    background-color: $color-primary;
-  }
-
   &__redirect-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +37,7 @@
   }
 
   &__redirect-link {
+    color: $color-primary;
     text-transform: uppercase;
     font-weight: 600;
 

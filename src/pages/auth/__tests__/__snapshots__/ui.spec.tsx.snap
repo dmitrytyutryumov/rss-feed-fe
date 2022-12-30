@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test auth page ui test auth page snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="auth-page"
+  >
+    <section
+      class="auth-page__form"
+    />
+  </main>
+</DocumentFragment>
+`;

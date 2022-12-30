@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test reset password form test reset password form snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="#"
+    class="reset-password-form"
+  >
+    <p
+      class="reset-password-form__title"
+    >
+      Enter your email
+    </p>
+    <p
+      class="reset-password-form__tip"
+    >
+      We will send you instructions to reset your password.
+    </p>
+    <div
+      class="reset-password-form__wrapper"
+    >
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Type your email"
+          type="Email"
+        />
+      </div>
+      <button
+        class="submit-btn undefined"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

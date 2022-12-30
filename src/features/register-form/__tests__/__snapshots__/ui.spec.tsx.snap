@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test register form test register form snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="#"
+    class="register-form"
+  >
+    <p
+      class="register-form__title"
+    >
+      Create an account
+    </p>
+    <div
+      class="register-form__redirect-wrapper"
+    >
+      <p
+        class="register-form__redirect-text"
+      >
+        Already have an account?
+      </p>
+      <a
+        class="register-form__redirect-link"
+        href="/login"
+      >
+        Log in
+      </a>
+    </div>
+    <div
+      class="register-form__wrapper"
+    >
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Email"
+          type="Email"
+        />
+      </div>
+      <div
+        class="register-form__pair-field-container"
+      >
+        <div
+          class="form-section undefined"
+          data-has-error="false"
+        >
+          <input
+            class="form-section__input"
+            placeholder="First Name"
+            type="text"
+          />
+        </div>
+        <div
+          class="form-section undefined"
+          data-has-error="false"
+        >
+          <input
+            class="form-section__input"
+            placeholder="Second Name"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Type your password"
+          type="password"
+        />
+      </div>
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Repeat password"
+          type="password"
+        />
+      </div>
+      <button
+        class="submit-btn undefined"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

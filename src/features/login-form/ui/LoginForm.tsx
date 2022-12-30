@@ -1,28 +1,17 @@
 import { Formik, Form, FormikHelpers } from 'formik'
-import * as yup from 'yup'
+import { Link } from 'react-router-dom'
 
-import { FormInput } from 'shared/components'
+import { FormInput, SubmitButton } from 'shared/components'
+import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
 import { FormValues } from './types'
 
 import './styles.scss'
-
-const INITIAL_VALUES = { email: '', password: '' }
-
-const VALIDATION_SCHEMA = yup.object().shape({
-  email: yup.string().email('Invalid email').required('Required'),
-  password: yup
-    .string()
-    .min(6, 'Too Short!')
-    .max(250, 'Too Long!')
-    .required('Required'),
-})
 
 export const LoginForm = () => {
   const submitHandler = async (
     values: FormValues,
     { setSubmitting }: FormikHelpers<FormValues>
   ) => {
-    console.log({ values })
     setSubmitting(false)
   }
 
@@ -41,20 +30,18 @@ export const LoginForm = () => {
             type="password"
             placeholder="Type your password"
           />
-          <a className="login-form__reset-password" data-to="reset-password">
+          <Link className="login-form__reset-password" to="../reset-password">
             Forgot your password?
-          </a>
-          <button className="login-form__btn" type="submit">
-            Submit
-          </button>
+          </Link>
+          <SubmitButton />
         </div>
         <div className="login-form__redirect-wrapper">
           <p className="login-form__redirect-text">
             Don&rsquo;t have an account?
           </p>
-          <a className="login-form__redirect-link" data-to="register">
+          <Link className="login-form__redirect-link" to="../register">
             Create one
-          </a>
+          </Link>
         </div>
       </Form>
     </Formik>

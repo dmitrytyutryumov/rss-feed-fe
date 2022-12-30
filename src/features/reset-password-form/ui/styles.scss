@@ -1,0 +1,22 @@
+@import 'src/app/styles/vars.scss';
+
+.reset-password-form {
+  display: grid;
+  gap: .7rem;
+
+  &__title {
+    font-family: inherit;
+    font-size: $fs-800;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  &__tip {
+    color: $disabled;
+  }
+  
+  &__wrapper {
+    display: grid;
+    gap: 1rem
+  }
+}

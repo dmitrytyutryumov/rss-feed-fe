@@ -1,11 +1,12 @@
-import { ui } from 'features/auth-form'
+import { Outlet } from 'react-router-dom'
+
 import './styles.scss'
 
-export function Auth() {
+export function AuthPage() {
   return (
     <main className="auth-page">
       <section className="auth-page__form">
-        <ui.LoginForm />
+        <Outlet />
       </section>
     </main>
   )
