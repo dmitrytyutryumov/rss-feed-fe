@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test submit button test sumbit button 1`] = `
+<DocumentFragment>
+  <button
+    class="submit-btn undefined"
+    type="submit"
+  >
+    Submit
+  </button>
+</DocumentFragment>
+`;

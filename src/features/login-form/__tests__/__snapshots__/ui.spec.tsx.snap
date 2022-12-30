@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test login form test login form snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="#"
+    class="login-form"
+  >
+    <p
+      class="login-form__title"
+    >
+      Login
+    </p>
+    <div
+      class="login-form__wrapper"
+    >
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Type your email"
+          type="Email"
+        />
+      </div>
+      <div
+        class="form-section undefined"
+        data-has-error="false"
+      >
+        <input
+          class="form-section__input"
+          placeholder="Type your password"
+          type="password"
+        />
+      </div>
+      <a
+        class="login-form__reset-password"
+        href="/reset-password"
+      >
+        Forgot your password?
+      </a>
+      <button
+        class="submit-btn undefined"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+    <div
+      class="login-form__redirect-wrapper"
+    >
+      <p
+        class="login-form__redirect-text"
+      >
+        Don’t have an account?
+      </p>
+      <a
+        class="login-form__redirect-link"
+        href="/register"
+      >
+        Create one
+      </a>
+    </div>
+  </form>
+</DocumentFragment>
+`;

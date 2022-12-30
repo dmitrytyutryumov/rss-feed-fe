@@ -1,7 +1,6 @@
 import './styles.scss'
 
-export function SubmitButton({ className, children, ...props }: any) {
-  console.log(className)
+export function SubmitButton({ className, children, ...props }) {
   const btnStyle = 'submit-btn' + ` ${className}` || ''
   return (
     <button className={btnStyle} type="submit" {...props}>
