@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { createEpicMiddleware } from 'redux-observable'
 
+import { userReducer } from 'entities/user'
+
 import { rootEpic } from './epic'
 
 const epicMiddleware = createEpicMiddleware()
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { userReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(epicMiddleware),
 })

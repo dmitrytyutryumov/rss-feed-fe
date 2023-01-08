@@ -2,7 +2,7 @@ import { useField } from 'formik'
 
 import './style.scss'
 
-export function FormInput({ label, name, className, ...props }) {
+export function FormInput({ label, name, className, ...props }: any) {
   const [field, meta] = useField(name)
   const hasError = meta.touched && meta.error
 

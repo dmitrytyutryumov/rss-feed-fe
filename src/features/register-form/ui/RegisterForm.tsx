@@ -1,17 +1,20 @@
 import { Formik, Form, FormikHelpers } from 'formik'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 import { FormInput, SubmitButton } from 'shared/components'
-import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
-import { FormValues } from './types'
+import { IRegisterFormValues, registerUserAction } from 'entities/user'
 
+import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
 import './styles.scss'
 
 export const RegisterForm = () => {
+  const dispatch = useDispatch()
   const submitHandler = async (
-    values: FormValues,
-    { setSubmitting }: FormikHelpers<FormValues>
+    values: IRegisterFormValues,
+    { setSubmitting }: FormikHelpers<IRegisterFormValues>
   ) => {
+    dispatch(registerUserAction(values))
     setSubmitting(false)
   }
 
