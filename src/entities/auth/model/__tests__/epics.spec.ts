@@ -1,6 +1,6 @@
 import { TestScheduler } from 'rxjs/testing'
 import { REGISTER_USER_ACTION_TYPE } from '../actions'
-import { registerUserEpic } from '../epics'
+import { registerEpic } from '../epics'
 
 describe('test user epics', () => {
   const testScheduler = new TestScheduler((actual, expected) => {
@@ -17,7 +17,7 @@ describe('test user epics', () => {
         },
       })
 
-      const output$ = registerUserEpic(action$)
+      const output$ = registerEpic(action$)
 
       expectObservable(output$).toBe('---a', {
         a: {

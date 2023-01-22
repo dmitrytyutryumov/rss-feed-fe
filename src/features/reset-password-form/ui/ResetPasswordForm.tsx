@@ -5,12 +5,17 @@ import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
 import { FormValues } from './types'
 
 import './styles.scss'
+import { useDispatch } from 'react-redux'
+import { resetPasswordAction } from 'entities/auth'
 
 export const ResetPasswordForm = () => {
+  const dispatch = useDispatch()
+
   const submitHandler = async (
     values: FormValues,
     { setSubmitting }: FormikHelpers<FormValues>
   ) => {
+    dispatch(resetPasswordAction())
     setSubmitting(false)
   }
 

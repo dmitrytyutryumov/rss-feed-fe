@@ -6,12 +6,17 @@ import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
 import { FormValues } from './types'
 
 import './styles.scss'
+import { loginUserAction } from 'entities/auth'
+import { useDispatch } from 'react-redux'
 
 export const LoginForm = () => {
+  const dispatch = useDispatch()
+
   const submitHandler = async (
     values: FormValues,
     { setSubmitting }: FormikHelpers<FormValues>
   ) => {
+    dispatch(loginUserAction(values))
     setSubmitting(false)
   }
 

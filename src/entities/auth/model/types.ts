@@ -35,3 +35,8 @@ export interface ILoginFormValues {
   email: string
   password: string
 }
+
+export interface ITokenResponse {
+  accessToken: string
+  regreshToken: string
+}

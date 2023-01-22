@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
 import { FormInput, SubmitButton } from 'shared/components'
-import { IRegisterFormValues, registerUserAction } from 'entities/user'
+import { IRegisterFormValues, registerUserAction } from 'entities/auth'
 
 import { INITIAL_VALUES, VALIDATION_SCHEMA } from './constants'
 import './styles.scss'

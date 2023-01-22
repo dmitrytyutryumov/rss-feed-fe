@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { createEpicMiddleware } from 'redux-observable'
 
-import { userReducer } from 'entities/user'
+import { userReducer } from 'entities/auth'
 
 import { rootEpic } from './epic'
 

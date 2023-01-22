@@ -1,5 +1,4 @@
 export * from './actions'
 export * from './epics'
-export * from './storage'
 export * from './types'
 export { userReducer } from './slice'
