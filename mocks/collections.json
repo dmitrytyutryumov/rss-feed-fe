@@ -2,7 +2,7 @@
  
   {
     "id": "auth",
-    "routes": ["signup:success", "login:success", "get-user:success"]
+    "routes": ["signup:success", "login:success", "get-user:success", "resetPassword:success"]
   }
   
 ]

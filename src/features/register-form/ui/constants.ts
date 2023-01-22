@@ -1,8 +1,7 @@
+import { IRegisterFormValues } from 'entities'
 import * as yup from 'yup'
 
-import { FormValues } from './types'
-
-export const INITIAL_VALUES: FormValues = {
+export const INITIAL_VALUES: IRegisterFormValues = {
   email: '',
   firstName: '',
   secondName: '',

@@ -36,6 +36,21 @@ module.exports = [
     ],
   },
   {
+    id: 'resetPassword', // route id
+    url: '/api/reset-password', // url in express format
+    method: 'POST', // HTTP method
+    variants: [
+      {
+        id: 'success', // variant id
+        type: 'json', // variant handler id
+        options: {
+          status: 200, // status to send
+          body: AUTH_TOKEN, // body to send
+        },
+      },
+    ],
+  },
+  {
     id: 'get-user', // route id
     url: '/api/user/:id', // url in express format
     method: 'GET', // HTTP method
